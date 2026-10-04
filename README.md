@@ -1,6 +1,5 @@
-Planning
-
-Module:
+_***Planning 2***_
+-
 
 PLEASE NOTE: The PDF version of the documentation contains diagram representations of some steps and the path planning results of the scenarios!!
 
