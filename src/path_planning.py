@@ -67,16 +67,16 @@ class PathPlanning:
         for i in range(numpairs, len(blue_cones)):
             lastx, lasty = points[-1]
             angle_change = math.atan2(blue_cones[i].y - lasty, blue_cones[i].x - lastx)
-            tx = blue_cones[i].x + 1.5 * math.cos(angle_change - math.pi / 2)
-            ty = blue_cones[i].y + 1.5 * math.sin(angle_change - math.pi / 2)
+            tx = blue_cones[i].x + 1.5* math.cos(angle_change - math.pi / 2)
+            ty = blue_cones[i].y + 1.5* math.sin(angle_change - math.pi / 2)
             points.append((tx, ty))
 
         #yellow cones
         for i in range(numpairs, len(yellow_cones)):
             lastx, lasty = points[-1]
             angle_change = math.atan2(yellow_cones[i].y - lasty, yellow_cones[i].x - lastx)
-            tx = yellow_cones[i].x + 1.5 * math.cos(angle_change + math.pi / 2)
-            ty = yellow_cones[i].y + 1.5 * math.sin(angle_change + math.pi / 2)
+            tx = yellow_cones[i].x + 1.5* math.cos(angle_change + math.pi / 2)
+            ty = yellow_cones[i].y + 1.5* math.sin(angle_change + math.pi / 2)
             points.append((tx, ty))
 
         #No cones
