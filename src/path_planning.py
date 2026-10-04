@@ -85,9 +85,9 @@ class PathPlanning:
             ty = cy + 10.0 * math.sin(tyaw)
             points.append((tx, ty))
 
-        # Extrapolate a final waypoint 6 meters ahead to satisfy the 5-10m rule
+        #add a final waypoint ahead to satisfy the 5-10m rule
         if len(points) >= 2:
-            # Calculate the heading of the final segment
+            #find the heading of the final segment
             final_yaw = math.atan2(points[-1][1] - points[-2][1], points[-1][0] - points[-2][0])
         else:
             final_yaw = tyaw
